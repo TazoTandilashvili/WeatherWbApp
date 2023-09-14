@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,700&family=Roboto:wght@400;500;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: auto;
+    height: 100vh;
+    background: #06283D;
+    /* background: linear-gradient(77deg, rgba(2,0,36,1) 0%, rgba(22,48,103,1) 35%, rgba(0,212,255,1) 100%); */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Serif', serif;
+}
+.container{
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    height: 108px ;
+    /* height: 567px; */
+    width: 400px;
+    border-radius: 18px;
+    padding: 35px;
+}
+
+.search_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input::placeholder{
+    font-size: 20px;
+    text-transform: none;
+}
+.search_box #inputVell{
+    color: #06283D;
+    width: 70%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+}
+#search_btn{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: 0;
+    color: #06283D;
+    background: #dff6ff;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+#search_btn:hover{
+    color: #fff;
+    background: #06283D;
+}
+
+.weater_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.temoerature{
+    font-size: 32px;
+    font-weight: 700;
+} 
+.description{
+    font-size: 24px;
+    margin-top: 7px;
+    font-weight: 400;
+}
+.weather-detail,
+.humidity,
+.wind{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    height: 100px;
+}
+.text span{
+    font-size: 24px;
+    font-weight: 500;
+}
+.text p {
+    font-size: 18px;
+}
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+.displayNone{
+    display: none;
+}
+
